@@ -1,0 +1,38 @@
+body {
+    background: royalblue;
+    font-size: 16px;
+    font-family: cursive;
+    cursor: default !important;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+fieldset {
+    border: 3px solid black;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+p {
+    margin: 0;
+}
+
+p::before {
+    content: '- ';
+}
+
+p:not(:last-child)::after {
+    content: ';';
+}
+
+p:last-child::after {
+    content: '.';
+}
